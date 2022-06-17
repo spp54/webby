@@ -1,0 +1,120 @@
+/*3.9 Apply the correct syntax for CSS rules */
+
+/*3.10 	Apply a range of selectors in their CSS rules*/
+/* (element type, class name, id name)*/
+/* and evaluate the differences between them*/
+
+/*3.11 	Apply common CSS properties*/
+
+/*3.12 Apply CSS properties after researching their use online*/
+
+
+/* The syntax for CSS is*/ 
+/* selector {Property: value; } */
+
+
+body /*selector: */ {
+    background-image:/* property*/ url("./images/mersey.jpg");/*value*/
+    background-size:cover; /* forces the image above to fill the page and scale */
+    background-position:left;
+    padding: 50px; /* defines the amount of space around the content*/
+    
+    
+    
+
+}
+
+p { /*All the common elements can be re styled in CSS*/
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+h1 { /*All the common elements can be re styled in CSS*/
+    text-align:center;
+    color:lawngreen;
+    font-size: 80px;
+}
+
+
+
+h2{
+    text-align: center;
+    color:blue;
+    font-size:40px;
+    
+}
+
+h3{
+    text-align: center;
+    color:crimson;
+    font-size:30px;
+    
+}
+
+h4{
+    text-align: center;
+    color:brown;
+    font-size:25px;
+    
+}
+
+footer{ /*All the common elements can be re styled in CSS*/
+    text-align: center;
+    color: beige;
+    list-style-type: none;
+    display:grid;
+
+}
+
+ul{
+    list-style-position:inside;
+    justify-content: left;
+    text-align: center;
+    font-size: 20px;
+}
+
+ol{
+    list-style-position: inside;
+    text-align: center;
+    font-size: 20px;  
+}
+
+#backyellow { /*This creats an ID called backyellow */
+    background-color:yellow;
+}
+
+.backwhite { /* This creates a class called backwhite*/
+     background-color:antiquewhite
+}
+
+
+.backblue {/* This creates a class called backblue*/
+     background-color:blue
+}
+
+#imgme { /* creates an ID for an image*/
+    background-image: url("./images/spp2.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    margin-left: 40%;
+    border-radius: 90%; /* Gives the image curves*/
+    width: 200px;
+    height: 220px;
+    object-fit: none;
+}
+
+
+a { /* increase font size and change color of link text*/
+    color:red;
+    font-size: 30px;
+    
+}
+
+/* from https://www.educative.io/answers/class-and-id-selectors-in-css*/
+
+/*The difference between an ID and a class is that an ID is only 
+used to identify one single element in our HTML. IDs are only 
+used when one element on the page should have a particular style
+ applied to it. However, a class can be used to identify more than
+  one HTML element.*/

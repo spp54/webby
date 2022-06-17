@@ -1,0 +1,78 @@
+<!-- 3.4 setup a html document-->
+<!-- 3.5 Understand and use common HTML elements-->
+<!-- 3.6 Recognise best practices for accessibility (semantic HTML)-->
+<!-- 3.7 Understand the purpose of HTML attributes-->
+
+<!DOCTYPE html> <!-- doctype identifies the code as html-->
+
+<html> 
+ <head> <!--This element contains data about the data in the web page-->
+    <lang="en"> <!--This attribute is used to set the language for the entire document-->
+    <meta charset="UTF-8"> <!--Specifies the character set. Most of time = UTF-8-->
+    <!--<link rel="stylesheet" type="text/css" href="./style.css">-->
+    <!--rel = defines relationship between this document and the CSS file-->
+    <!--type = determines the content of the linked file. Text or CSS as default -->
+    <!--href = link to CSS file location-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE 8 compatability fix-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--name and content = tells browser how to control pages dimensions-->
+    <title>Basic Setup</title> <!--Title text displayed on web browser TAB-->
+ </head> <!--close tag-->
+
+ <body> <!--This element contains everything that is to be displayed in the html document-->
+    <div><!-- The div element breaks the document up into manageble chunks-->
+     <h1>Hello and Welcome to the wonderful world of HTML. This is Heading number 1</h1>
+     <!--Big header element 42 pixels-->
+     <p1>This is a paragraph under heading 1</p1>
+     <!--Paragraph element text 17 pixels-->
+     <h2>This is heading number 2. Below this heading is a unordered list of my favorite food</h2>
+     <!--Next heading element size down. 35 pixels-->
+    
+     <ul> <!--Between unordered list tags this element will create a tabbed bullet pointed list-->
+         <li>Chicken</li> <!--Unordered list items-->
+         <li>Pasta</li>
+         <li>Pizza</li>
+         <li>Avocado</li>
+     </ul>
+    </div>
+    
+    <h3>This is heading number 4. Below is a ordered list of my favorie guitars</h3>
+    <!--Next heading element size down. 29 pixels-->
+    <ol> <!--This element will create a tabbed numbered list-->
+        <li>Gretch</li>
+        <li>Gibson</li> <!-- ordered list items-->
+        <li>Rickenbacker</li>
+    </ol>
+    <div>
+        <h4>This is also a heading 4. Below is paragraph explaining why I joined this course.
+            <!--Next heading element size down. 26 pixels-->
+            <p>Having completed the bootcamp coding course and the cybersecurity course with Code Nation
+                and found the teaching methods and resources to be very helpful so I decided to take the plunge and
+                enroll on the Master coding course
+            </p>
+        </h4>
+        <h4> What are my goals</h4>
+        <p>Strong coding skills are becoming a requirement in all aspects of computer networks
+            especially in the field of network automation. My goal is to reach
+            a standard of coding which will enhance my employment prospects
+        </p>
+        <img src="./images/spp2.jpg" alt="me">
+        <!--The IMG attribute creates a holding space for the image referenced in SRC-->
+        <!--If the image fails to display ALT displays the text in quotes-->
+        <p>Its Me</p>
+    </div>
+    <footer> <!--This element is used to display anything at the base of a document-->
+        <p>Here is a link to W3Schools</p>
+        <a href="https://www.w3schools.com"target="blank">Visit W3Schools.com</a>
+        <!--Creates a link to a web site specified by HREF attribute-->
+        <!--using the text specified in TARGET attribute as the link activation point-->
+        <p>And here is a link to a subnetting practice site </p>
+        <a href="https://www.subnetting.net/Summary.aspx"
+        target ="blank">Practice subnetting</a>
+        <p>And here is a link to take you to the top of this page </p>
+        <a href="#top"
+        target ="blank">Go to top of page</a>
+    </footer>
+ </body> <!--End of the html document content section-->
+
+</html> <!--End of HTML-->

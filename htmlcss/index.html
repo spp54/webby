@@ -1,0 +1,92 @@
+<!--3.8 Correctly link an HTML document to CSS files and JS scripts-->
+<!--3.10 Apply a range of selectors in their CSS rules-->
+<!--(element type, class name, id name) and evaluate the differences between them-->
+<!--3.11 Apply common CSS properties-->
+<!--3.12 Apply CSS properties after researching their use online-->
+
+ <DOCTYPE html> <!-- doctype identifies the code as html-->
+
+<html> 
+ <head> <!--This element contains data about the data in the web page-->
+    <lang="en"> <!--This attribute is used to set the language for the entire document-->
+    <meta charset="UTF-8"> <!--Specifies the character set. Most of time = UTF-8-->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!--rel = defines relationship between this document and the CSS file-->
+    <!--type = determines the content of the linked file. Text or CSS as default -->
+    <!--href = link to CSS file location-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE 8 compatability fix-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--name and content = tells browser how to control pages dimensions-->
+    <title>Basic Setup Two</title> <!--Title text displayed on web browser TAB-->
+ </head> <!--close tag-->
+
+ <body> <!--This element contains everything that is to be displayed in the html document-->
+    <div><!-- The div element breaks the document up into manageble chunks-->
+     
+     <h1>Hello and Welcome to the wonderful world of HTML and CSS. This is Heading number 1</h1>
+     <!--Big header element default size 42 pixels adjusted 80px in CSS -->
+     <p>This is a paragraph under heading 1</p>
+     <!--Paragraph element text 17 pixels-->
+     <h2>This is heading number 2. Below this heading is a unordered list of my favorite food</h2>
+     <!--Next heading element size down. 35 pixels-->
+    </div>
+    
+    <div id="backyellow">
+     <ul> <!--Between unordered list tags this element will create a tabbed bullet pointed list-->
+         <li>Chicken</li> <!--Unordered list items-->
+         <li>Pasta</li>
+         <li>Pizza</li>
+         <li>Avocado</li>
+     </ul>
+    </div>
+    
+    <h3>This is heading number 3. Below is a ordered list of my favorite guitars</h3>
+    <!--Next heading element size down. 29 pixels-->
+    <ol class="backwhite"> <!--This element will create a tabbed numbered list-->
+        <li>Gretch</li>
+        <li>Gibson</li> <!-- ordered list items-->
+        <li>Rickenbacker</li>
+    </ol>
+    <div class="backblue"> <!--The backblue class is applied to the whole-->
+        <!--of the DIV section. The backyellow ID overrides the backblue-->
+        <!-- class in the paragraph inside the DIV-->
+        <h4>This is heading number  4. Below is paragraph explaining why I joined this course.
+            <!--Next heading element size down. 26 pixels-->
+            <p id="backyellow">Having completed the bootcamp coding course and the cybersecurity course with Code Nation
+                and found the teaching methods and resources to be very helpful so I decided to take the plunge and
+                enroll on the Master coding course
+            </p>
+        </h4>
+        <h4> What are my goals</h4>
+        <p>Strong coding skills are becoming a requirement in all aspects of computer networks
+            especially in the field of network automation. My goal is to reach
+            a standard of coding which will enhance my employment prospects
+        </p>
+    </div>
+
+    <div id="imgme" ><p id="backyellow">Its Me</p></div> <!--This displays the image defined in CSS.-->
+
+    <video 
+    width="1100" 
+    height="240" 
+
+    controls>
+        <source src="./video/birds.mp4" type="video/mp4">
+      </video> <p id="backwhite">The birds</p>
+
+
+    <footer> <!--This element is used to display anything at the base of a document-->
+        <p>Here is a link to W3Schools</p>
+        <a href="https://www.w3schools.com"target="blank">Visit W3Schools.com</a>
+        <!--Creates a link to a web site specified by HREF attribute-->
+        <!--using the text specified in TARGET attribute as the link activation point-->
+        <p>And here is a link to a subnetting practice site </p>
+        <a href="https://www.subnetting.net/Summary.aspx"
+        target ="blank">Practice subnetting</a>
+        <p>And here is a link to take you to the top of this page </p>
+        <a href="#top"
+        target ="blank">Go to top of page</a>
+    </footer>
+ </body> <!--End of the html document content section-->
+
+</html> <!--End of HTML-->
